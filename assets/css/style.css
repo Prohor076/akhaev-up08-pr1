@@ -5,7 +5,11 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'OpenSans Regular';
-    color: #fff;
+    color: #000;
+}
+
+.wrapper {
+    padding-bottom: 50px;
 }
 
 @font-face {
@@ -21,6 +25,12 @@
 }
 
 @font-face {
+	font-family: 'OpenSans Light'; 
+    font-weight: 300;
+	src: url(../fonts/OpenSans-Light.ttf); 
+}
+
+@font-face {
 	font-family: 'Oswald Regular'; 
     font-weight: 400;
 	src: url(../fonts/Oswald-Regular.ttf); 
@@ -30,6 +40,7 @@
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
 }
 
 .header__items-nav {
@@ -79,11 +90,13 @@
     letter-spacing: 0.01em;
     line-height: 71px;
     font-family: 'Oswald Regular';
+    color: #fff;
 }
 
 .header__items-text-desc {
     margin-top: 40px;
     font-size: 16px;
+    color: #fff;
 }
 
 .header__items-text-btn {
@@ -103,4 +116,148 @@
 .header__items-text-btn a:hover {
     background-color: #fff;
     color: #000;
+}
+
+.projects, .catalog {
+    margin-top: 150px;
+}
+
+.projects__items, .catalog__items {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.projects__items-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__items-title-text {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Oswald Regular';
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.projects__items-title-text::before {
+    content: '';
+    background-image: url(../img/decor.svg);
+    width: 100px;
+    height: 16px;
+    margin-right: 40px;
+}
+
+.projects__items-title-buttons {
+    display: flex;
+}
+
+.projects__items-title-buttons-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #005BC1;
+    cursor: pointer;
+}
+
+.projects__items-title-buttons-btn:nth-child(1) {
+    margin-right: -2px;
+}
+
+.projects__items-title-buttons-btn:nth-child(1)::before {
+    content: '';
+    background-image: url(../img/arrow.svg);
+    color: #005BC1;
+    width: 10px;
+    height: 17px;
+}
+
+.projects__items-title-buttons-btn:nth-child(2)::before {
+    content: '';
+    background-image: url(../img/arrow.svg);
+    color: #005BC1;
+    width: 10px;
+    height: 17px;
+    transform: rotate(-180deg);
+}
+
+.projects__items-slides {
+    display: flex;
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.projects__items-slides-slide {
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    transition: .5s;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.projects__items-slides-slide:hover {
+    background-color: transparent;
+}
+
+.projects__items-slides-slide:hover img {
+    opacity: 1;
+}
+
+.projects__items-slides-slide img {
+    max-width: 540px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    transition: .5s;
+}
+
+.slide__bg {
+    height: 400px;
+}
+
+.slide__text {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 30px;
+    bottom: 35px;
+    right: 35px;
+}
+
+.slide__text-title {
+    font-size: 18px;
+    color: #343434;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    font-family: 'Oswald Regular';
+}
+
+.slide__text-desc {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #343434;
+    font-family: 'OpenSans Light';
+}
+
+.catalog__items-list {
+    display: flex;
+    justify-content: center;
+    gap: 47px;
+}
+
+.catalog__items-list .active {
+    color: #005BC1;
+    border-bottom: 2px solid #005BC1;
+}
+
+.catalog__items-list-item {
+    font-size: 24px;
+    font-family: 'Oswald Regular';
+    line-height: 36px;
+    letter-spacing: 0.05em;
 }
