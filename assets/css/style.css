@@ -8,10 +8,6 @@
     color: #000;
 }
 
-.wrapper {
-    padding-bottom: 50px;
-}
-
 @font-face {
 	font-family: 'OpenSans Regular'; 
     font-weight: 400;
@@ -457,4 +453,63 @@
 .news__items-list-item-text-button a {
     text-decoration: underline;
     font-size: 14px;
+}
+
+.footer {
+    background-color: #005BC1;
+}
+
+.footer__items-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__items-item-text {
+    color: #fff;
+}
+
+.footer__items-item-text:nth-child(1) {
+    font-size: 18px;
+    font-family: 'Oswald Regular';
+}
+
+.footer__items-item-text:nth-child(2) {
+    font-size: 14px;
+    font-family: 'OpenSans SemiBold';
+}
+
+.footer__items-item-text:nth-child(3) {
+    font-size: 14px;
+    font-family: 'OpenSans SemiBold';
+}
+
+.footer__items-item:nth-child(1) {
+    padding-top: 36px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 25px;
+}
+
+.footer__items-item:nth-child(2) {
+    padding-top: 25px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 25px;
+    justify-content: normal;
+    gap: 110px;
+}
+
+.footer__items-item:nth-child(3) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer__items-item:nth-child(3) .footer__items-item-text {
+    font-family: 'OpenSans Light';
+    font-size: 14px;
+}
+
+.footer__items-item-list a {
+    font-size: 14px;
+    font-family: 'OpenSans Light';
+    color: #fff;
 }
