@@ -2,4 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'OpenSans Regular';
+    color: #fff;
+}
+
+@font-face {
+	font-family: 'OpenSans Regular'; 
+    font-weight: 400;
+	src: url(../fonts/OpenSans-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'OpenSans SemiBold'; 
+    font-weight: 600;
+	src: url(../fonts/OpenSans-SemiBold.ttf); 
+}
+
+@font-face {
+	font-family: 'Oswald Regular'; 
+    font-weight: 400;
+	src: url(../fonts/Oswald-Regular.ttf); 
+}
+
+.header {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__items-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 90, 193, .6);
+    padding: 11px 40px;
+}
+
+.header__items-nav-list ul {
+    display: flex;
+    gap: 26px;
+}
+
+.header__items-nav-list li {
+    display: flex;
+    gap: 26px;
+}
+
+.header__items-nav-list a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.header__items-text {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+}
+
+.header__items-text-info {
+    margin-top: 202px;
+    margin-left: -254px;
+}
+
+.header__items-text-block {
+    max-width: 444px;
+    height: 720px;
+    width: 100%;
+    background-color: rgba(0, 91, 193, .6);
+}
+
+.header__items-text-title {
+    font-size: 48px;
+    letter-spacing: 0.01em;
+    line-height: 71px;
+    font-family: 'Oswald Regular';
+}
+
+.header__items-text-desc {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.header__items-text-btn {
+    margin-top: 55px;
+}
+
+.header__items-text-btn a {
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.header__items-text-btn a:hover {
+    background-color: #fff;
+    color: #000;
 }
