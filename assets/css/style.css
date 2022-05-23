@@ -118,11 +118,11 @@
     color: #000;
 }
 
-.projects, .catalog {
+.projects, .catalog, .rent {
     margin-top: 150px;
 }
 
-.projects__items, .catalog__items {
+.projects__items, .catalog__items, .rent__items {
     max-width: 1110px;
     margin: auto;
 }
@@ -130,6 +130,7 @@
 .projects__items-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .projects__items-title-text {
@@ -299,4 +300,77 @@
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
+}
+
+.rent__items-cards {
+    margin-top: 40px;
+    display: flex;
+    gap: 95px;
+    align-items: center;
+}
+
+.rent__items-cards-card:nth-child(2) {
+    padding: 30px;
+    border: 3px solid #005BC1;
+    max-width: 665px;
+    width: 100%;
+}
+
+.rent__items-cards-card-text {
+    color: #343434;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+	font-family: 'Oswald Regular'; 
+}
+
+.rent__info {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.rent__info-text {
+    color: #343434;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+	font-family: 'Oswald Regular'; 
+}
+
+.rent__info-img img {
+    max-width: 255px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+}
+
+.rent__info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rent__info-items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rent__info-list {
+    margin-left: 20px;
+}
+
+.rent__info-list li {
+    list-style-type: disc;
+	font-family: 'OpenSans Light';
+    font-size: 14px;
+}
+
+.rent__items-cards-card-desc {
+    font-size: 18px;
+    font-family: 'OpenSans Light';
+    color: #343434;
+    max-width: 350px;
+    width: 100%;
 }
