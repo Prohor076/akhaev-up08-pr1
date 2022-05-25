@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="part1">
             <div class="header__items">
                 <div class="header__items-nav">
                     <div class="header__items-nav-logo">
@@ -18,11 +21,11 @@
                     <div class="header__items-nav-list">
                         <ul>
                             <li>
-                                <a href="#">О компании</a>
-                                <a href="#">Портфолио</a>
-                                <a href="#">Каталог</a>
-                                <a href="#">Сервис</a>
-                                <a href="#">Контакты</a>
+                                <a href="#part1">О компании</a>
+                                <a href="#part2">Портфолио</a>
+                                <a href="#part3">Каталог</a>
+                                <a href="#part4">Сервис</a>
+                                <a href="#part6">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -40,7 +43,7 @@
                 </div>
             </div>
         </header>
-        <div class="projects">
+        <div class="projects" id="part2">
             <div class="projects__items">
                 <div class="projects__items-title">
                     <div class="projects__items-title-text">Наши проекты</div>
@@ -71,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="catalog">
+        <div class="catalog" id="part3">
             <div class="catalog__items">
                 <div class="projects__items-title">
                     <div class="projects__items-title-text">Каталог продукции</div>
@@ -82,27 +85,33 @@
                 </div>
                 <div class="catalog__items-equipments equipments">
                     <div class="equipments__equipment">
-                        <div class="equipments__equipment-bg">
-                            <img src="assets/img/1.png">
-                        </div>
-                        <div class="equipments__equipment-text">Статичные<br>светодиодные приборы</div>
+                        <a href="#">
+                            <div class="equipments__equipment-bg">
+                                <img src="assets/img/1.png">
+                            </div>
+                            <div class="equipments__equipment-text">Статичные<br>светодиодные приборы</div>
+                        </a>
                     </div>
                     <div class="equipments__equipment">
-                        <div class="equipments__equipment-bg">
-                            <img src="assets/img/2.png">
-                        </div>
-                        <div class="equipments__equipment-text">Контроллеры</div>
+                        <a href="#">
+                            <div class="equipments__equipment-bg">
+                                <img src="assets/img/2.png">
+                            </div>
+                            <div class="equipments__equipment-text">Контроллеры</div>
+                        </a>
                     </div>
                     <div class="equipments__equipment">
-                        <div class="equipments__equipment-bg">
-                            <img src="assets/img/3.png">
-                        </div>
-                        <div class="equipments__equipment-text">Аксессуары</div>
+                        <a href="#">
+                            <div class="equipments__equipment-bg">
+                                <img src="assets/img/3.png">
+                            </div>
+                            <div class="equipments__equipment-text">Аксессуары</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="rent">
+        <div class="rent" id="part4">
             <div class="rent__items">
                 <div class="projects__items-title">
                     <div class="projects__items-title-text">Аренда оборудования</div>
@@ -123,10 +132,14 @@
                         </div>
                         <div class="rent__items-cards-card-info rent__info">
                             <div class="rent__info-img">
-                                <img src="assets/img/3.png">
+                                <a href="#">
+                                    <img src="assets/img/3.png">
+                                </a>
                             </div>
                             <div class="rent__info-items">
-                                <div class="rent__info-text">Robe Robin ParFect 100</div>
+                                <a href="#">
+                                    <div class="rent__info-text">Robe Robin ParFect 100</div>
+                                </a>
                                 <div class="rent__info-list">
                                     <ul>
                                         <li>Источник света 12 светодиодов RGBW по 15 Вт каждый</li>
@@ -141,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <div class="news">
+        <div class="news" id="part5">
             <div class="news__items">
                 <div class="projects__items-title">
                     <div class="projects__items-title-text">Новости</div>
@@ -152,11 +165,15 @@
                 <div class="news__items-list">
                     <div class="news__items-list-item" style="max-width: 540px; width: 100%;">
                         <div class="news__items-list-item-img" style="height: 242px;">
-                            <img src="assets/img/n1.png">
+                            <a href="#">
+                                <img src="assets/img/n1.png">
+                            </a>
                         </div>
                         <div class="news__items-list-item-text">
                             <div class="news__items-list-item-text-title">
-                                <div class="news__items-list-item-text-title-name">Семинар Milos</div>
+                                <a href="#">
+                                    <div class="news__items-list-item-text-title-name">Семинар Milos</div>
+                                </a>
                                 <div class="news__items-list-item-text-title-date">27.01.2019</div>
                             </div>
                             <div class="news__items-list-item-text-desc">Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.</div>
@@ -168,11 +185,15 @@
                     <div class="news__items-list-item">
                         <div class="news__items-list-item-text">
                             <div class="news__items-list-item-text-title">
-                                <div class="news__items-list-item-text-title-name">Выставка Prolight+Sound NAMM Russia 2016</div>
+                                <a href="#">
+                                    <div class="news__items-list-item-text-title-name">Выставка Prolight+Sound NAMM Russia 2016</div>
+                                </a>
                             </div>
                             <div class="news__items-list-item-text-desc" style="margin-top: 20px;">30 контрактов, тысячи восторженных посетителей...</div>
                             <div class="news__items-list-item-img" style="display: flex; margin-top: 20px;">
-                                <img style="max-width: 128px; max-height: 115px; width: 100%; height: 100%;" src="assets/img/n2.png">
+                                <a href="#">
+                                    <img style="max-width: 128px; max-height: 115px; width: 100%; height: 100%;" src="assets/img/n2.png">
+                                </a>
                                 <div class="news__items-list-item-text-title-date" style="align-self: flex-end; margin-left: 25px;">27.01.2019</div>
                             </div>
                         </div>
@@ -180,11 +201,15 @@
                     <div class="news__items-list-item">
                         <div class="news__items-list-item-text">
                             <div class="news__items-list-item-text-title">
-                                <div class="news__items-list-item-text-title-name">Семинар Robe</div>
+                                <a href="#">
+                                    <div class="news__items-list-item-text-title-name">Семинар Robe</div>
+                                </a>
                             </div>
                             <div class="news__items-list-item-text-desc" style="margin-top: 20px;">30 января 2017 года наши сотрудники побывали в Берлине..</div>
                             <div class="news__items-list-item-img" style="display: flex; margin-top: 20px;">
-                                <img style="max-width: 128px; max-height: 115px; width: 100%; height: 100%;" src="assets/img/n3.png">
+                                <a href="#">
+                                    <img style="max-width: 128px; max-height: 115px; width: 100%; height: 100%;" src="assets/img/n3.png">
+                                </a>
                                 <div class="news__items-list-item-text-title-date" style="align-self: flex-end; margin-left: 25px;">27.01.2019</div>
                             </div>
                         </div>
@@ -192,7 +217,7 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer" id="part6">
             <div class="footer__items">
                 <div class="footer__items-item">
                     <div class="footer__items-item-text">(812) 710-80-25</div>
@@ -202,20 +227,20 @@
                 <div class="footer__items-item">
                     <div class="footer__items-item-list">
                         <ul>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Новости</a></li>
+                            <li><a href="#part1">О компании</a></li>
+                            <li><a href="#part5">Новости</a></li>
                         </ul>
                     </div>
                     <div class="footer__items-item-list">
                         <ul>
-                            <li><a href="#">Каталог</a></li>
-                            <li><a href="#">Аренда</a></li>
+                            <li><a href="#part3">Каталог</a></li>
+                            <li><a href="#part4">Аренда</a></li>
                         </ul>
                     </div>
                     <div class="footer__items-item-list">
                         <ul>
-                            <li><a href="#">Наши проекты</a></li>
-                            <li><a href="#">Сервисное обслуживание</a></li>
+                            <li><a href="#part2">Наши проекты</a></li>
+                            <li><a href="#part4">Сервисное обслуживание</a></li>
                         </ul>
                     </div>
                 </div>
